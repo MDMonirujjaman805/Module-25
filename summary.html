@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Summary</title>
+</head>
+<body>
+  <main>
+
+    <!-- section*3>h1.section-title{Section title-$}+ul>li*4{List item-$} -->
+
+    <!-- div*3>h1.div-title{Table-$}+table>tr>td*5 -->
+
+    <!-- optional -->
+    <div>
+      <h1 class="div-title">Table-1</h1>
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1 class="div-title">Table-2</h1>
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1 class="div-title">Table-3</h1>
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <section id="main-section">
+      <h1 class="section-title">Section title-1</h1>
+      <ul>
+        <li>List item-1</li>
+        <li>List item-2</li>
+        <li>List item-3</li>
+        <li>List item-4</li>
+      </ul>
+    </section>
+    <section>
+      <h1 class="section-title">Section title-2</h1>
+      <ul>
+        <li>List item-1</li>
+        <li>List item-2</li>
+        <li>List item-3</li>
+        <li>List item-4</li>
+      </ul>
+    </section>
+    <section>
+      <h1 class="section-title">Section title-3</h1>
+      <ul>
+        <li>List item-1</li>
+        <li>List item-2</li>
+        <li>List item-3</li>
+        <li>List item-4</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const allLi = document.getElementsByTagName('li')
+    console.log(allLi);
+
+    const mainSection = document.getElementById('main-section');
+    console.log(mainSection);
+
+    const className = document.getElementsByClassName('section-title');
+    console.log(className);
+
+    const quS = document.querySelector('section');
+    console.log(quS);
+
+    const quSa = document.querySelectorAll('section');
+    console.log(quSa);
+
+    // let section = document.getElementById("main-section");
+    // console.log(section instanceof HTMLElement);
+    // section.classList.add("new-class");
+    // console.log(section);
+
+
+
+  </script>
+
+</body>
+</html>

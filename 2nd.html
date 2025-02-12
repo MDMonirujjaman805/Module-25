@@ -17,12 +17,151 @@
   <p class="check">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   <p class="check">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
+
+  <section id="section-container">
+    <div class="div-style">
+      <h1>This is a Fruts List</h1>
+      <ol id="add-child1">
+        <li>Mnago</li>
+        <li>Deats</li>
+        <li>jack Fruts</li>
+        <li>banana</li>
+      </ol>
+  </div>
+    <div class="div-style">
+      <h1>This is a Color List</h1>
+      <ol>
+        <li>Green</li>
+        <li>Yallow</li>
+        <li>Red</li>
+        <li>Blue</li>
+      </ol>
+  </div>
+    <div class="div-style">
+      <h1>This is a Flawor List</h1>
+      <ol id="add-child">
+        <li>Shapla</li>
+        <li>Joba</li>
+        <li>Hasna Hena</li>
+        <li>Bali</li>
+      </ol>
+  </div>
+  </section>
   <script>
+
+    
+
+    const addedDiv = document.getElementById('section-container');
+    const section = document.createElement('section');
+    const h1 = document.createElement('h1');
+    h1.innerText = 'My Food List';
+    section.appendChild(h1);
+
+    const ul = document.createElement('ul')
+    const li1 = document.createElement('li');
+    li1.innerText = "biryani";
+    ul.appendChild(li1);
+    
+    const li2 = document.createElement('li');
+    li2.innerText = "borhani";
+    ul.appendChild(li2);
+
+    const li3 = document.createElement('li');
+    li3.innerText = "rost ";
+    ul.appendChild(li3);
+
+    section.appendChild(ul);
+    addedDiv.appendChild(section);
+
+    addedDiv.style.textAlign = 'center';
+    addedDiv.style.backgroundColor = 'green';
+    addedDiv.style.border = '2px solid red';
+
+
+    const sectionDrinks = document.createElement('section');
+    sectionDrinks.innerHTML = `
+    <h>My Drinks Section</h>
+    <ol>
+      <li>pani</li>
+      <li>sorbot</li>
+      <li>mojo</li>
+      </ol>
+    `
+    addedDiv.appendChild(sectionDrinks);
+
+
+
+    const sectionDress = document.createElement('section');
+    sectionDress.innerHTML = ` <h> My Dress Section </h>
+    <ol> 
+      <li> Pangabi</li>
+      <li> Gangi</li>
+      <li> Lungi</li>
+      </ol>
+      `
+      addedDiv.appendChild(sectionDress);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const addChild1 = document.getElementById('add-child1');
+    const ll = document.createElement('ll')
+    ll.innerText = 'jam';
+    addChild1.appendChild(ll);
+
+    // const addh1 = document.getElementsByClassName('div-style');
+    // addh1.innerHtml = `<h1> hello world </h1>`
+    // console.log(addh1);
+
+
+
+
   
     const div1 = document.querySelectorAll('p');
     console.log(div1);
+
     const div2 = document.getElementsByClassName('.check');
     console.log(div2);
+
+    const mainStyle = document.getElementById("section-container");
+    mainStyle.style.backgroundColor = "gray";
+    mainStyle.style.border = '2px solid black';
+
+    // const divStyle = document.getElementsByClassName('div-style');
+    // divStyle.style.backgroundColor = 'green';
+
+    const divStyle = document.getElementsByClassName('div-style');
+
+for (const element of divStyle) {
+    element.style.backgroundColor = 'green';
+    element.style.borderRadius = '20px';
+    element.style.border = '2px solid black';
+    element.style.margin = '10px';
+    element.style.textAlign = 'center';
+  };
+
+  const addChild = document.getElementById('add-child');
+  const li = document.createElement('li');
+  li.innerText = 'golap';
+  addChild.appendChild(li);
+
+  // console.log(addChild);
+
+    // console.log(divStyle);
+
+    // console.log(divStyle);
+
   </script>
 
 </body>
